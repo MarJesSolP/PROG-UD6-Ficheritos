@@ -19,10 +19,10 @@ public class Main {
             }
         }
 
-        text = text.toLowerCase(). replace(" ", "_");
+        text = text.toUpperCase(). replace(" ", "_");
 
         try {
-            FileWriter textoUno = new FileWriter("src/ficheros/actividaduno.text");
+            FileWriter textoUno = new FileWriter("src/ficheros/actividaduno.txt");
             for (int i = 0; i < text.length(); i++) {
                 textoUno.write(text.charAt(i));
             }
